@@ -1,12 +1,13 @@
-import './App.css'
+import './index.css';
+import React from 'react';
+import { Editor } from './ui/editor';
 
 function App() {
-
-  return (
-    <>
-      <h1>Hello World</h1>
-    </>
-  )
+    return (
+        <>
+            <Editor />
+        </>
+    );
 }
 
-export default App
+export default App;
