@@ -1,12 +1,6 @@
-import { useEditor, EditorContent, EditorProvider } from '@tiptap/react';
-// import Document from '@tiptap/extension-document'
-// import Paragraph from '@tiptap/extension-paragraph'
-// import Text from '@tiptap/extension-text'
-// import Bold from '@tiptap/extension-bold'
-// import Italic from '@tiptap/extension-italic'
-// import Heading from '@tiptap/extension-heading'
+import { EditorProvider } from '@tiptap/react';
 import StarterKit from '@tiptap/starter-kit';
-import { MenuBar } from './menu-bar';
+import { MenuBar } from '../components/menu-bar';
 
 const INITIAL_CONTENT = `
     <h2>
@@ -42,21 +36,6 @@ const INITIAL_CONTENT = `
 const extensions = [StarterKit];
 
 export const Editor = () => {
-    // const editor = useEditor({
-    //     extensions: extensions,
-    //     content: INITIAL_CONTENT,
-    //     editorProps: {
-    //         attributes: {
-    //             class: 'prose prose-sm sm:prose-base lg:prose-lg xl:prose-2xl m-5 focus:outline-none',
-    //         }
-    //     }
-    // })
-
-    // return (
-    //     <div className='py-16 px-8 md:px-32'>
-    //         <EditorContent editor={editor} />
-    //     </div>
-    // )
     return (
         <div>
             <EditorProvider
